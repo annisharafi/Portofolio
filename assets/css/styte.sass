@@ -1,0 +1,264 @@
+/*-------universal----------*/
+$high-color : #440381
+$high-color2 : #9C5BB7
+$textcolor: #8f9ea5
+$underlinecolor : #027bff
+
+*
+  margin: 0
+  padding: 0
+
+.clearfix::after
+  content: ""
+  clear: both
+  display: table
+
+html
+  font-family: 'Open-sans',sans-serif
+  font-weight: 100
+
+body
+  width: 80%
+  margin: auto
+
+h1
+  text-transform: uppercase
+  font-size: 40px
+  font-weight: 700
+  color: $high-color
+
+h2
+  text-transform: uppercase
+  font-size: 35px
+  font-weight: 700
+  color: $high-color
+
+h4
+  text-transform: uppercase
+  font-size: 20px
+  font-weight: 700
+  color: $high-color
+p
+  color: $textcolor
+  opacity: 0.8
+  font-weight: 100
+  margin-top: 10px
+  font-size: 20px
+
+i
+  color: $high-color
+  letter-spacing: 10px
+
+li
+  color: $textcolor
+  text-decoration: none
+  list-style: none
+
+
+
+/*------navigasi------*/
+.nav
+  display: flex
+  align-items: center
+  height: 100px
+
+  .nav-menu a
+    text-decoration: none
+    position: absolute
+    z-index: 2
+    margin-top: -10px
+    margin-left: 10px
+    font-weight: 700
+    font-size: 25px
+
+  .nav-menu,.nav-icon
+    flex: 1
+
+  .nav-icon
+    text-align: right
+    i
+      font-size: 30px
+
+  .nav-icon a, .nav-menu a
+    display: inline-block
+
+
+
+/*--------landing--------*/
+.landing
+  position: relative
+  height: 600px
+  img
+    margin-top: -100px
+    position: absolute
+    z-index: 1
+
+  .pure-text
+    padding-top: 250px
+    span
+      font-size: 30px
+      text-transform: uppercase
+      color: $high-color2
+
+    .hello
+      font-size: 25px
+      letter-spacing: 1px
+
+    .status
+      font-size: 20px
+
+    .hello,.status
+    text-align: right
+
+/*------------skill-------*/
+.skill
+  padding-bottom: 100px
+  background-color: #f5eaf9
+  h2
+  padding-top: 50px
+  text-align: center
+  letter-spacing: 2px
+
+  .underline
+    margin: auto
+    display: block
+    background-color: $underlinecolor
+    height: 5px
+    width: 70px
+    margin-bottom: 30px
+    border-radius: 2px
+
+  .bagi
+    display: flex
+    padding-top: 30px
+    .prog
+      width: 50%
+      border-right: 2px solid $high-color2
+      ul
+        padding-top: 25px
+        list-style: none
+        li
+          text-align: left
+          line-height: 2em
+          margin-left: 20%
+
+    .tools
+      max-width: 50%
+      margin-left: 3em
+
+      .tools-pict
+        margin-top: 30px
+        img
+          margin-top: 25px
+          width: 60px
+          height: 60px
+          padding: 10px
+          border: 3px solid $high-color2
+          border-radius: 50%
+          margin: 10px
+          &:hover
+              transform: scale(1.3) rotate(30deg)
+
+
+
+/*--------my project---------*/
+.my-project
+  margin-top: 100px
+  width: 100%
+  position: relative
+  margin-bottom: 10em
+
+  .wordText
+    position: absolute
+    top: 90
+    margin-left: 30px
+
+    .title
+      border: 2px solid $high-color2
+      padding: 10px
+      margin-top: 30px
+      margin-bottom: 20px
+      letter-spacing: 2px
+
+    .underline
+      display: block
+      background-color: $underlinecolor
+      height: 3px
+      width: 61px
+      margin-top: 5px
+
+    .linke
+      text-decoration: none
+      font-size: 20px
+
+  >.working
+    width: 85%
+    float: right
+    -webkit-box-shadow : 0px 3px 70px 0px rgba(23,30,26,0.06)
+    -moz-box-shadow: 0px 3px 70px 0px rgba(23,30,26,0.06)
+    box-shadow: 0px 3px 70px 0px rgba(23,30,26,0.06)
+
+  ul
+    position: absolute
+    bottom: 0
+    right: 86%
+    li
+      a
+        font-size: 30px
+
+.my-project2
+  margin-top: 100px
+  width: 100%
+  position: relative
+  margin-bottom: 10em
+
+  .wordText
+    position: absolute
+    top: 85
+    right: 0
+    text-align: right
+    margin-left: 30px
+
+    .title
+      border: 2px solid $high-color2
+      padding: 10px
+      margin-top: 30px
+      margin-bottom: 20px
+      letter-spacing: 2px
+
+    .underline
+      display: block
+      background-color: $underlinecolor
+      height: 3px
+      width: 61px
+      margin-top: 5px
+      float: right
+    .linke
+      text-decoration: none
+      font-size: 20px
+
+  >.working
+    width: 85%
+    float: left
+    -webkit-box-shadow : 0px 3px 70px 0px rgba(23,30,26,0.06)
+    -moz-box-shadow: 0px 3px 70px 0px rgba(23,30,26,0.06)
+    box-shadow: 0px 3px 70px 0px rgba(23,30,26,0.06)
+
+  ul
+    position: absolute
+    bottom: 0
+    left: 86%
+    li
+      a
+        font-size: 30px
+
+// footer
+.footer
+  padding: 30px
+  background-image: url("../../assets/image/geometry2.png")
+  text-align: center
+  .footer-icon
+    text-align: right
+    a
+      i
+        font-size: 30px
